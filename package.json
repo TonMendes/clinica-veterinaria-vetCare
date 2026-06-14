@@ -3,14 +3,23 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "docs": "node config/swagger-autogen.js"
   },
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
+    "dotenv": "^17.4.2",
     "express": "~4.16.1",
+    "helmet": "^8.2.0",
+    "jsonwebtoken": "^9.0.3",
     "morgan": "~1.9.1",
     "mysql2": "^3.22.5",
-    "sequelize": "^6.37.8"
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "sequelize": "^6.37.8",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.1"
   }
 }
